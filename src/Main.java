@@ -58,6 +58,14 @@ public class Main {
         System.out.println("Conteúdos Concluidos João:" + devJoao.getConteudosConcluidos());
         System.out.println("XP:" + devJoao.calcularTotalXp());
 
+        Dev devBreno = new Dev();
+        devBreno.setNome("Breno");
+        devBreno.inscreverBootcamp(bootcamp);
+        System.out.println("\n");
+        System.out.println("Conteúdos Inscritos Breno: " + devBreno.getConteudosInscritos());
+        devBreno.setMetaHorasPorDia(3);
+        devBreno.estimarDiasParaConcluir();
+
     }
 
 }
